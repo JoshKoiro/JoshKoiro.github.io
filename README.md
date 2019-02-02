@@ -1,2 +1,2 @@
 # JoshKoiro.github.io
-GitHub Pages
+https://joshkoiro.github.io/
