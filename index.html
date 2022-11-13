@@ -7,12 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <widgetbot
-  server="1040303671365349476"
-  channel="1041224906286841866"
-  width="800"
-  height="600"
-></widgetbot>
-<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+<script id="script" src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+<script>
+    document.body.onload = loadWidget()
+
+    function loadWidget(){
+
+    let browserHeight = window.innerHeight
+    let browserWidth = window.innerWidth
+
+    const widget = document.createElement("widgetbot")
+    widget.setAttribute("id","widget")
+    widget.setAttribute("server","1040303671365349476")
+    widget.setAttribute("channel","1041224906286841866")
+    widget.setAttribute("height",browserHeight.toString())
+    widget.setAttribute("width",browserWidth.toString())
+
+
+    let script = document.getElementById("script")
+    document.body.insertBefore(widget,script)
+    }
+</script>
 </body>
 </html>
