@@ -99,7 +99,7 @@
 .delayFade {
   opacity: 0;
   animation-name: fadeIn, slideIn;
-  animation-delay: 0s;
+  animation-delay: 0.25s;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(.61,1.51,.47,1.02);
