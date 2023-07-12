@@ -1,0 +1,12 @@
+.component-container {
+  display: flex;
+  position: relative;
+}
+.component-text {
+  color: var(--dl-color-gray-black);
+  width: 672px;
+  height: 159px;
+  max-width: auto;
+  line-height: 1.22;
+  padding-left: 20px;
+}

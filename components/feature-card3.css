@@ -1,0 +1,27 @@
+.feature-card3-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.feature-card3-text {
+  color: var(--dl-color-gray-900);
+  margin-top: var(--dl-space-space-doubleunit);
+  text-align: center;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.feature-card3-text1 {
+  color: var(--dl-color-gray-700);
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Resume Website</title>
+    <meta property="og:title" content="Resume Website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Nunito;
+        font-size: 18px;
+      }
+
+      body {
+        font-weight: 300;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <style>
+          @keyframes shake {
+        0% {
+          transform: rotate(0deg);
+        }
+        20% {
+          transform: rotate(7deg);
+        }
+        50% {
+         transform: rotate(-5deg);
+        }
+        70% {
+          transform: rotate(3deg);
+        }
+
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+      @keyframes fadeIn {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+      }
+      @keyframes slideIn {
+        0% {
+          margin-top:100vh;
+        }
+        30% {
+          margin-top:100vh;
+        }
+        100% {
+          margin-top:0;
+        }
+      }
+      @keyframes slideInFromRight {
+        0% {
+          transform: translateX(50%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      @keyframes slideInFromLeft {
+        0% {
+          transform: translateY(50%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      @-webkit-keyframes glowIn {
+        from {
+          text-shadow:
+          0 0 5px rgba(255,255,255,0),
+          0 0 10px rgba(255,255,255,0),
+          0 0 15px rgba(255,255,255,0),
+          0 0 20px rgba(153, 0, 255,0),
+          0 0 30px rgba(153, 0, 255,0),
+          0 0 40px rgba(153, 0, 255,0),
+          0 0 50px rgba(153, 0, 255,0),
+          0 0 100px rgba(153, 0, 255,0);
+        }
+        to {
+          text-shadow:
+          0 0 5px rgba(255,255,255,1),
+          0 0 10px rgba(255,255,255,1),
+          0 0 15px rgba(255,255,255,1),
+          0 0 20px rgba(153, 0, 255,1),
+          0 0 30px rgba(153, 0, 255,1),
+          0 0 40px rgba(153, 0, 255,1),
+          0 0 50px rgba(153, 0, 255,1),
+          0 0 100px rgba(153, 0, 255,1);
+        }
+      }
+      @-webkit-keyframes glowOut {
+        to {
+          text-shadow:
+          0 0 5px rgba(255,255,255,0),
+          0 0 10px rgba(255,255,255,0),
+          0 0 15px rgba(255,255,255,0),
+          0 0 20px rgba(153, 0, 255,0),
+          0 0 30px rgba(153, 0, 255,0),
+          0 0 40px rgba(153, 0, 255,0),
+          0 0 50px rgba(153, 0, 255,0),
+          0 0 100px rgba(153, 0, 255,0);
+        }
+        from {
+          text-shadow:
+          0 0 5px rgba(255,255,255,1),
+          0 0 10px rgba(255,255,255,1),
+          0 0 15px rgba(255,255,255,1),
+          0 0 20px rgba(153, 0, 255,1),
+          0 0 30px rgba(153, 0, 255,1),
+          0 0 40px rgba(153, 0, 255,1),
+          0 0 50px rgba(153, 0, 255,1),
+          0 0 100px rgba(153, 0, 255,1);
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <header data-role="Accordion" class="home-header fadeIn">
+          <div class="home-separator"></div>
+          <nav class="home-nav">
+            <nav
+              class="navigation-links1-nav navigation-links1-root-class-name19"
+            >
+              <a href="#about-me" class="navigation-links1-link hoverGlow">
+                <span>About Me</span>
+              </a>
+              <a href="#experience" class="navigation-links1-link1 hoverGlow">
+                <span>Experience</span>
+              </a>
+              <a href="#knowledge" class="navigation-links1-link2 hoverGlow">
+                <span>Knowledge</span>
+              </a>
+              <a href="#history" class="navigation-links1-link3 hoverGlow">
+                <span>Career</span>
+              </a>
+              <span class="navigation-links1-text hoverGlow">
+                <span>Portfolio</span>
+              </span>
+            </nav>
+          </nav>
+          <div data-role="AccordionHeader" class="home-accordion-header">
+            <svg viewBox="0 0 1024 1024" class="home-icon">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              ></path>
+            </svg>
+          </div>
+          <div data-role="AccordionContent" class="home-accordion-content">
+            <div class="home-nav1">
+              <nav
+                class="navigation-links1-nav navigation-links1-root-class-name20"
+              >
+                <a href="#about-me" class="navigation-links1-link hoverGlow">
+                  <span>About</span>
+                </a>
+                <a href="#experience" class="navigation-links1-link1 hoverGlow">
+                  <span>Features</span>
+                </a>
+                <a href="#knowledge" class="navigation-links1-link2 hoverGlow">
+                  <span>Pricing</span>
+                </a>
+                <a href="#history" class="navigation-links1-link3 hoverGlow">
+                  <span>Team</span>
+                </a>
+                <span class="navigation-links1-text hoverGlow">
+                  <span>Blog</span>
+                </span>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <div class="home-hero fadeIn">
+          <div class="home-container01 card delayFade">
+            <h1 class="home-text Greeting">Hi!</h1>
+            <div class="home-container02">
+              <h1 class="home-text01 Greeting">My name is Josh Koiro</h1>
+            </div>
+            <img
+              alt="image"
+              src="https://cdn.discordapp.com/attachments/1128682242902851624/1128714446148206724/Coffee-Steam.gif"
+              class="home-image"
+            />
+            <h2 class="home-text02 GreatingSub">
+              I am a manufacturing estimator by day and self-taught programmer
+              by night.
+            </h2>
+          </div>
+        </div>
+        <div class="separator home-separator1"></div>
+        <div class="home-banner">
+          <div class="home-container03">
+            <h1 id="about-me" class="home-text03 Section-Heading">About me</h1>
+            <span class="home-text04 Content">
+              <span>
+                I have 10 years of experience learning and using JavaScript from
+                the ground up, creating web applications built on Node.JS.
+              </span>
+              <br />
+              <br />
+              <span>
+                In my professional life, I have 5 years of expertise in
+                utilizing VBA, Microsoft Excel and SQL Server to develop
+                internal tools for a sales and estimating team. This includes
+                reporting applications, dashboards, document generation, and
+                sophisticated product line configuration forms.
+              </span>
+              <br />
+              <br />
+              <span>
+                I bring a diverse skill set which extends beyond traditional
+                programming, encompassing a wide range of digital tools
+                including graphic design, AI prompt engineering, music and video
+                production. I am well-versed in building Docker containers,
+                managing home servers, and working with REST APIs. My passion
+                for technology fuels my drive to continuously adapt to new tools
+                and technologies, ensuring I remain at the forefront of the
+                ever-evolving digital landscape.
+              </span>
+            </span>
+          </div>
+          <div class="home-container04"></div>
+        </div>
+        <div class="separator home-separator2"></div>
+        <div class="home-features">
+          <h1 id="experience" class="home-text12 Section-Heading">
+            <span>Experience</span>
+            <br />
+          </h1>
+          <span class="home-text15">
+            These are some of the technologies that I've built projects using
+          </span>
+          <div class="home-container05">
+            <div class="card slide-left">
+              <img
+                alt="image"
+                src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png"
+                class="feature-card3-image wobble"
+              />
+              <h2 class="feature-card3-text Card-Heading">
+                <span>Node JS</span>
+              </h2>
+              <span class="feature-card3-text1">
+                <span>Express servers, APIs and backend development</span>
+              </span>
+            </div>
+            <div class="card slide-left">
+              <img
+                alt="image"
+                src="https://cyclr.com/wp-content/uploads/2022/03/ext-550.png"
+                class="feature-card3-image wobble"
+              />
+              <h2 class="feature-card3-text Card-Heading">
+                <span>SQL Server</span>
+              </h2>
+              <span class="feature-card3-text1">
+                <span>
+                  complex report queries, using enterprise-level database
+                  systems
+                </span>
+              </span>
+            </div>
+            <div class="card slide-left">
+              <img
+                alt="image"
+                src="https://seeklogo.com/images/D/docker-logo-CF97D0124B-seeklogo.com.png"
+                class="feature-card3-image wobble"
+              />
+              <h2 class="feature-card3-text Card-Heading">
+                <span>Docker</span>
+              </h2>
+              <span class="feature-card3-text1">
+                <span>Container development, management and deployment</span>
+              </span>
+            </div>
+            <div class="card slide-left">
+              <img
+                alt="image"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Microsoft_Excel_2013-2019_logo.svg/2170px-Microsoft_Excel_2013-2019_logo.svg.png"
+                class="feature-card3-image wobble"
+              />
+              <h2 class="feature-card3-text Card-Heading">
+                <span>Excel VBA</span>
+              </h2>
+              <span class="feature-card3-text1">
+                <span>
+                  Excel as a rapid-prototype system for complex forms and
+                  applications
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="separator home-separator3"></div>
+        <div class="home-features1">
+          <h1 id="knowledge" class="home-text16 Section-Heading">
+            <span>Knowledge</span>
+            <br />
+          </h1>
+          <span class="home-text19">
+            <span class="home-text20">
+              I have a very wide range of interests and knowledge and find use
+              in applying these skills to wide range of circumstances and use
+              cases.
+            </span>
+            <br />
+          </span>
+          <div class="home-container06">
+            <div class="card slide-left">
+              <img
+                alt="image"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"
+                class="feature-card3-image wobble"
+              />
+              <h2 class="feature-card3-text Card-Heading">
+                <span>Graphic Design</span>
+              </h2>
+              <span class="feature-card3-text1">
+                <span>
+                  Over 10 years experience using Photoshop and Illustrator
+                </span>
+              </span>
+            </div>
+            <div class="card slide-left">
+              <img
+                alt="image"
+                src="https://raw.githubusercontent.com/JoshKoiro/JoshKoiro/main/svg/html.svg"
+                class="feature-card3-image wobble"
+              />
+              <h2 class="feature-card3-text Card-Heading">
+                <span>Web Design</span>
+              </h2>
+              <span class="feature-card3-text1">
+                <span>
+                  Building webpages and utilizing web technology in nearly every
+                  programming project
+                </span>
+              </span>
+            </div>
+            <div class="card slide-left">
+              <img
+                alt="image"
+                src="https://static.vecteezy.com/system/resources/previews/011/410/303/original/artificial-intelligence-ai-processor-chip-icon-symbol-for-graphic-design-logo-website-social-media-mobile-app-ui-illustration-vector.jpg"
+                class="feature-card3-image wobble"
+              />
+              <h2 class="feature-card3-text Card-Heading">
+                <span>Prompt Engineering</span>
+              </h2>
+              <span class="feature-card3-text1">
+                <span>
+                  Working to be at the forefront of understanding and utilizing
+                  AI tech
+                </span>
+              </span>
+            </div>
+            <div class="card slide-left">
+              <img
+                alt="image"
+                src="https://raw.githubusercontent.com/JoshKoiro/JoshKoiro/main/svg/medium.svg"
+                class="feature-card3-image wobble"
+              />
+              <h2 class="feature-card3-text Card-Heading">
+                <span>Writing</span>
+              </h2>
+              <span class="feature-card3-text1">
+                <span>Blogging and technical writing</span>
+              </span>
+            </div>
+            <div class="card slide-left">
+              <img
+                alt="image"
+                src="https://blogs.solidworks.com/solidworksblog/wp-content/uploads/sites/2/Solidworks_250x250.png"
+                class="feature-card3-image wobble"
+              />
+              <h2 class="feature-card3-text Card-Heading">
+                <span>3D Modeling</span>
+              </h2>
+              <span class="feature-card3-text1">
+                <span>
+                  5+ years experience using SolidWorks in a professional
+                  engineering capacity
+                </span>
+              </span>
+            </div>
+            <div class="card slide-left">
+              <img
+                alt="image"
+                src="https://raw.githubusercontent.com/JoshKoiro/JoshKoiro/main/svg/ableton.svg"
+                class="feature-card3-image wobble"
+              />
+              <h2 class="feature-card3-text Card-Heading">
+                <span>Music Production</span>
+              </h2>
+              <span class="feature-card3-text1">
+                <span>
+                  passionate about music,, music creation, and music production
+                  for 15+ years
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="separator home-separator4"></div>
+        <div class="home-steps">
+          <h1 id="history" class="home-text22 Section-Heading">
+            My Career History
+          </h1>
+          <span class="home-text23">
+            <span>How I've got to where I am now</span>
+            <br />
+          </span>
+          <div class="home-container07">
+            <div class="home-step">
+              <div class="home-container08">
+                <div class="home-line"></div>
+                <div class="home-container09">
+                  <svg viewBox="0 0 1024 1024" class="home-icon02">
+                    <path
+                      d="M634 558q92-64 92-174 0-88-63-151t-151-63-151 63-63 151q0 46 27 96t65 78l36 26v98h172v-98zM512 86q124 0 211 87t87 211q0 156-128 244v98q0 18-12 30t-30 12h-256q-18 0-30-12t-12-30v-98q-128-88-128-244 0-124 87-211t211-87zM384 896v-42h256v42q0 18-12 30t-30 12h-172q-18 0-30-12t-12-30z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="home-line1"></div>
+              </div>
+              <div class="home-container10">
+                <h1 class="home-text26">Web Design</h1>
+                <span class="home-text27">
+                  <span>
+                    I spent a year and a half between high school and college
+                    learning the basics of web design and providing some
+                    services for clients.
+                  </span>
+                  <br />
+                </span>
+              </div>
+            </div>
+            <div class="home-step1">
+              <div class="home-container11">
+                <div class="home-line2"></div>
+                <div class="home-container12">
+                  <svg viewBox="0 0 1024 1024" class="home-icon04">
+                    <path
+                      d="M746 512q26 0 45-18t19-46-19-46-45-18-45 18-19 46 19 46 45 18zM618 342q26 0 45-19t19-45-19-45-45-19-45 19-19 45 19 45 45 19zM406 342q26 0 45-19t19-45-19-45-45-19-45 19-19 45 19 45 45 19zM278 512q26 0 45-18t19-46-19-46-45-18-45 18-19 46 19 46 45 18zM512 128q158 0 271 100t113 242q0 88-63 150t-151 62h-74q-28 0-46 19t-18 45q0 22 16 42t16 44q0 28-18 46t-46 18q-160 0-272-112t-112-272 112-272 272-112z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="home-line3"></div>
+              </div>
+              <div class="home-container13">
+                <h1 class="home-text30">Computer Aided Drafting</h1>
+                <span class="home-text31">
+                  <span>
+                    I graduated with a 2 year degree in Computer-Aided Drafting
+                    and was hired by a manufacturing company as a mechanical
+                    engineer.
+                  </span>
+                  <br />
+                </span>
+              </div>
+            </div>
+            <div class="home-step2">
+              <div class="home-container14">
+                <div class="home-line4"></div>
+                <div class="home-container15">
+                  <svg viewBox="0 0 1024 1024" class="home-icon06">
+                    <path
+                      d="M576 736l96 96 320-320-320-320-96 96 224 224z"
+                    ></path>
+                    <path
+                      d="M448 288l-96-96-320 320 320 320 96-96-224-224z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="home-line5"></div>
+              </div>
+              <div class="home-container16">
+                <h1 class="home-text34">Estimating</h1>
+                <span class="home-text35">
+                  <span>
+                    I transitioned to the role of sales estimating and have
+                    taken on many tasks involving process improvement
+                    specifically by programming tools to improve speed, accuracy
+                    and ease of use.
+                  </span>
+                  <br />
+                </span>
+              </div>
+            </div>
+            <div class="home-step3">
+              <div class="home-container17">
+                <div class="home-line6"></div>
+                <div class="home-container18">
+                  <svg viewBox="0 0 1024 1024" class="home-icon09">
+                    <path
+                      d="M480 64c-265.096 0-480 214.904-480 480 0 265.098 214.904 480 480 480 265.098 0 480-214.902 480-480 0-265.096-214.902-480-480-480zM751.59 704c8.58-40.454 13.996-83.392 15.758-128h127.446c-3.336 44.196-13.624 87.114-30.68 128h-112.524zM208.41 384c-8.58 40.454-13.996 83.392-15.758 128h-127.444c3.336-44.194 13.622-87.114 30.678-128h112.524zM686.036 384c9.614 40.962 15.398 83.854 17.28 128h-191.316v-128h174.036zM512 320v-187.338c14.59 4.246 29.044 11.37 43.228 21.37 26.582 18.74 52.012 47.608 73.54 83.486 14.882 24.802 27.752 52.416 38.496 82.484h-155.264zM331.232 237.516c21.528-35.878 46.956-64.748 73.54-83.486 14.182-10 28.638-17.124 43.228-21.37v187.34h-155.264c10.746-30.066 23.616-57.68 38.496-82.484zM448 384v128h-191.314c1.88-44.146 7.666-87.038 17.278-128h174.036zM95.888 704c-17.056-40.886-27.342-83.804-30.678-128h127.444c1.762 44.608 7.178 87.546 15.758 128h-112.524zM256.686 576h191.314v128h-174.036c-9.612-40.96-15.398-83.854-17.278-128zM448 768v187.34c-14.588-4.246-29.044-11.372-43.228-21.37-26.584-18.74-52.014-47.61-73.54-83.486-14.882-24.804-27.75-52.418-38.498-82.484h155.266zM628.768 850.484c-21.528 35.876-46.958 64.746-73.54 83.486-14.184 9.998-28.638 17.124-43.228 21.37v-187.34h155.266c-10.746 30.066-23.616 57.68-38.498 82.484zM512 704v-128h191.314c-1.88 44.146-7.666 87.040-17.28 128h-174.034zM767.348 512c-1.762-44.608-7.178-87.546-15.758-128h112.524c17.056 40.886 27.344 83.806 30.68 128h-127.446zM830.658 320h-95.9c-18.638-58.762-44.376-110.294-75.316-151.428 42.536 20.34 81.058 47.616 114.714 81.272 21.48 21.478 40.362 44.938 56.502 70.156zM185.844 249.844c33.658-33.658 72.18-60.932 114.714-81.272-30.942 41.134-56.676 92.666-75.316 151.428h-95.898c16.138-25.218 35.022-48.678 56.5-70.156zM129.344 768h95.898c18.64 58.762 44.376 110.294 75.318 151.43-42.536-20.34-81.058-47.616-114.714-81.274-21.48-21.478-40.364-44.938-56.502-70.156zM774.156 838.156c-33.656 33.658-72.18 60.934-114.714 81.274 30.942-41.134 56.678-92.668 75.316-151.43h95.9c-16.14 25.218-35.022 48.678-56.502 70.156z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="home-line7"></div>
+              </div>
+              <div class="home-container19">
+                <h1 class="home-text38">The Next Big Thing!</h1>
+                <span class="home-text39">
+                  <span>
+                    Reach out to me on LinkedIn or other social networks if you
+                    think your company would be a good fit as a next step in my
+                    career
+                  </span>
+                  <br />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="separator home-separator5"></div>
+        <div class="home-container20">
+          <div class="home-container21">
+            <h1 id="socials" class="home-text42 Section-Heading">
+              Find Me on Social Media
+            </h1>
+            <div class="home-social-bar">
+              <a
+                href="https://www.linkedin.com/in/jkoiro/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link"
+              >
+                <svg
+                  viewBox="0 0 877.7142857142857 1024"
+                  class="home-icon11 social-links"
+                >
+                  <path
+                    d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://medium.com/@josh.koiro"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link1"
+              >
+                <svg viewBox="0 0 1024 1024" class="home-icon13 social-links">
+                  <path
+                    d="M341.143 240.571v670.286c0 17.714-8.571 34.286-28 34.286-6.857 0-13.143-1.714-18.857-4.571l-265.714-133.143c-16-8-28.571-28.571-28.571-45.714v-651.429c0-14.286 6.857-27.429 22.286-27.429 9.143 0 17.143 4.571 25.143 8.571l292 146.286c0.571 0.571 1.714 2.286 1.714 2.857zM377.714 298.286l305.143 494.857-305.143-152v-342.857zM1024 308.571v602.286c0 18.857-10.857 32-29.714 32-9.714 0-18.857-2.857-26.857-7.429l-252-125.714zM1022.286 240c0 2.286-295.429 481.714-318.286 518.286l-222.857-362.286 185.143-301.143c6.286-10.286 17.714-16 29.714-16 5.143 0 10.286 1.143 14.857 3.429l309.143 154.286c1.143 0.571 2.286 1.714 2.286 3.429z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://github.com/JoshKoiro"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link2"
+              >
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  class="home-icon15 social-links"
+                >
+                  <path
+                    d="M365.714 694.857c0 41.714-21.714 109.714-73.143 109.714s-73.143-68-73.143-109.714 21.714-109.714 73.143-109.714 73.143 68 73.143 109.714zM731.429 694.857c0 41.714-21.714 109.714-73.143 109.714s-73.143-68-73.143-109.714 21.714-109.714 73.143-109.714 73.143 68 73.143 109.714zM822.857 694.857c0-87.429-53.143-164.571-146.286-164.571-37.714 0-73.714 6.857-111.429 12-29.714 4.571-59.429 6.286-89.714 6.286s-60-1.714-89.714-6.286c-37.143-5.143-73.714-12-111.429-12-93.143 0-146.286 77.143-146.286 164.571 0 174.857 160 201.714 299.429 201.714h96c139.429 0 299.429-26.857 299.429-201.714zM950.857 594.286c0 63.429-6.286 130.857-34.857 189.143-75.429 152.571-282.857 167.429-431.429 167.429-150.857 0-370.857-13.143-449.143-167.429-29.143-57.714-35.429-125.714-35.429-189.143 0-83.429 22.857-162.286 77.714-226.286-10.286-31.429-15.429-64.571-15.429-97.143 0-42.857 9.714-85.714 29.143-124.571 90.286 0 148 39.429 216.571 93.143 57.714-13.714 117.143-20 176.571-20 53.714 0 108 5.714 160 18.286 68-53.143 125.714-91.429 214.857-91.429 19.429 38.857 29.143 81.714 29.143 124.571 0 32.571-5.143 65.143-15.429 96 54.857 64.571 77.714 144 77.714 227.429z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <footer class="home-footer">
+          <span class="home-text43">
+            © 2023 Josh Koiro, All Rights Reserved.
+          </span>
+        </footer>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  </body>
+</html>
