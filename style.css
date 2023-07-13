@@ -130,7 +130,7 @@
 .social-links {
   fill: var(--dl-color-gray-700);
   width: auto;
-  height: 100px;
+  height: 75px;
   margin: 0px 50px;
   padding: 20px;
   align-self: center;
@@ -138,7 +138,7 @@
 .social-links-header {
   fill: var(--dl-color-gray-700);
   width: auto;
-  height: 75px;
+  height: 65px;
   padding: 20px;
   align-self: center;
 }

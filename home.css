@@ -136,13 +136,18 @@
 }
 .home-container02 {
   width: 300px;
+  height: 100px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .home-accordion-header {
   display: flex;
   align-items: center;
-  padding-left: var(--dl-space-space-fiveunits);
+  padding-left: var(--dl-space-space-fourunits);
   flex-direction: row;
+  justify-content: flex-start;
 }
 .home-icon {
   width: 32px;
@@ -165,9 +170,10 @@
 .home-nav1 {
   min-width: 460px;
   align-self: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .home-social-bar {
-  width: 300px;
   display: flex;
   padding: 0px;
   align-self: center;
@@ -809,6 +815,9 @@
   color: var(--dl-color-gray-700);
 }
 @media(max-width: 1400px) {
+  .home-container02 {
+    width: 0px;
+  }
   .home-hero {
     min-width: 10vh;
     background-position: 35%;
@@ -839,6 +848,9 @@
   }
 }
 @media(max-width: 991px) {
+  .home-container02 {
+    width: 0px;
+  }
   .home-nav {
     padding-top: 16px;
   }
@@ -904,6 +916,9 @@
   .home-separator {
     margin-top: 24px;
     margin-bottom: 24px;
+  }
+  .home-container02 {
+    width: 300px;
   }
   .home-icon {
     fill: var(--dl-color-gray-700);
@@ -1137,25 +1152,27 @@
     padding: var(--dl-space-space-doubleunit);
     min-width: 200px;
     min-height: 250px;
+    padding-bottom: 125px;
     justify-content: flex-start;
   }
   .home-text {
-    font-size: 24px;
+    font-size: 36px;
   }
   .home-container04 {
     margin-left: auto;
     margin-right: auto;
   }
   .home-text01 {
-    font-size: 24px;
+    font-size: 36px;
     align-self: center;
     text-align: center;
   }
   .home-image {
-    height: 75px;
+    top: 70%;
+    height: 100px;
   }
   .home-text02 {
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
   }
   .home-separator1 {
@@ -1254,6 +1271,12 @@
   .home-separator5 {
     margin-top: var(--dl-space-space-unit);
     margin-bottom: var(--dl-space-space-unit);
+  }
+  .home-container22 {
+    display: none;
+  }
+  .home-text45 {
+    display: hide;
   }
   .home-social-bar1 {
     padding-top: 32px;
