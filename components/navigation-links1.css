@@ -56,17 +56,21 @@
     flex-direction: column;
   }
   .navigation-links1-link {
+    font-size: 24px;
     margin-bottom: var(--dl-space-space-unit);
   }
   .navigation-links1-link1 {
+    font-size: 24px;
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
   .navigation-links1-link2 {
+    font-size: 24px;
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
   .navigation-links1-link3 {
+    font-size: 24px;
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }

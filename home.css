@@ -56,17 +56,21 @@
     flex-direction: column;
   }
   .navigation-links1-link {
+    font-size: 24px;
     margin-bottom: var(--dl-space-space-unit);
   }
   .navigation-links1-link1 {
+    font-size: 24px;
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
   .navigation-links1-link2 {
+    font-size: 24px;
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
   .navigation-links1-link3 {
+    font-size: 24px;
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
@@ -112,6 +116,7 @@
 .home-header {
   width: 100%;
   display: flex;
+  overflow: visible;
   max-width: 1400px;
   align-self: center;
   align-items: center;
@@ -157,10 +162,11 @@
 .home-accordion-content {
   display: flex;
   overflow: hidden;
-  max-height: 0;
+  margin-top: 0px;
+  max-height: 0px;
   transition: 0.3s ease-in-out;
   align-items: center;
-  flex-direction: column;
+  padding-left: var(--dl-space-space-fourunits);
 }
 .home-nav {
   display: flex;
@@ -1271,9 +1277,6 @@
   .home-separator5 {
     margin-top: var(--dl-space-space-unit);
     margin-bottom: var(--dl-space-space-unit);
-  }
-  .home-container22 {
-    display: none;
   }
   .home-text45 {
     display: hide;
