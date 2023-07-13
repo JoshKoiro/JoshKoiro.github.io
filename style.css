@@ -135,6 +135,13 @@
   padding: 20px;
   align-self: center;
 }
+.social-links-header {
+  fill: var(--dl-color-gray-700);
+  width: auto;
+  height: 75px;
+  padding: 20px;
+  align-self: center;
+}
 .hoverGlow {
   animation-name: glowOut;
   animation-duration: 300ms;

@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: center;
 }
 .navigation-links1-link {
   text-decoration: none;
@@ -18,9 +19,6 @@
 .navigation-links1-link3 {
   margin-left: 32px;
   text-decoration: none;
-}
-.navigation-links1-text {
-  margin-left: 32px;
 }
 
 
@@ -51,11 +49,6 @@
     font-family: Nunito;
     font-weight: 300;
   }
-  .navigation-links1-text {
-    font-style: normal;
-    font-family: Nunito;
-    font-weight: 300;
-  }
 }
 @media(max-width: 767px) {
   .navigation-links1-nav {
@@ -74,10 +67,6 @@
     margin-bottom: var(--dl-space-space-unit);
   }
   .navigation-links1-link3 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .navigation-links1-text {
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
