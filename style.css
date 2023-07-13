@@ -153,6 +153,14 @@
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 }
+.animated {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+.animated-fade-in-out {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
 .Section-Text {
   font-size: 18px;
   font-family: Noto Sans;
