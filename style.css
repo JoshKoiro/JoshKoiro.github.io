@@ -161,6 +161,22 @@
   opacity: 1;
   transition: opacity 0.5s ease-in;
 }
+.fly-left {
+  opacity: 1;
+  transition-timing-function: ease-in-out;
+}
+.fly-right {
+  opacity: 1;
+  transition-timing-function: ease-in-out;
+}
+.fly-left-init {
+  opacity: 1;
+  transition-timing-function: ease-in-out;
+}
+.fly-right-init {
+  opacity: 1;
+  transition-timing-function: ease-in-out;
+}
 .Section-Text {
   font-size: 18px;
   font-family: Noto Sans;

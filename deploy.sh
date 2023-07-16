@@ -1,5 +1,6 @@
 #!/bin/bash
-downloadedFile="C:\\Users\\JKoiro\\Downloads\\josh koiro - resume-html.zip"
+# downloadedFile="C:\\Users\\JKoiro\\Downloads\\josh koiro - resume-html.zip"
+downloadedFile="D:\\Downloads\\josh koiro - resume-html.zip"
 destinationDirectory="$PWD"
 echo $downloadedFile
 
