@@ -346,7 +346,7 @@
   border-radius: var(--dl-radius-radius-round);
   background-size: cover;
   justify-content: center;
-  background-image: url('https://media.licdn.com/dms/image/C4D03AQF37RzrIqRPiA/profile-displayphoto-shrink_800_800/0/1605292545254?e=1694649600&v=beta&t=_6QU59Nm9YBj-n1YlU_9_IdZIpDRPGDOe1i6qREQJKQ');
+  background-image: url('/public/profilePic.jpg');
 }
 .home-features {
   width: 100%;
