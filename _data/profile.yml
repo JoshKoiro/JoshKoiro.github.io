@@ -14,6 +14,11 @@ signature: "/assets/img/signature.png"
 illustration: "/assets/img/desk.webp"
 illustration_alt: "Illustration of a bearded developer at a desk with a typewriter, headphones and a monitor"
 
+# Optional separate banner for dark mode. Leave it as "" to use the light illustration,
+# turned white. When set, dark mode shows this image as-is (its own colours), so it
+# should be drawn for a dark background, with a transparent background of its own.
+illustration_dark: "/assets/img/desk-dark.webp"
+
 # The big opening line.
 #   - Wrap words in **double asterisks** to make them bold.
 #   - Leave a blank line to start a new line with some space above it.
@@ -29,11 +34,11 @@ intro: |-
 # The "About" section: one entry per paragraph.
 about:
   - >-
-    **Hi There!**
+    **Hi there!**
   - >-
     I'm Josh, a mechanical designer turned estimator and digital handyman.
   - >-
-    By day I work in estimating and sales at **Beta Star Life Science Equipment**. I started
+    By day I work in estimating and sales at Beta Star Life Science Equipment. I started
     out in the engineering group as a mechanical designer after studying CAD at Thaddeus
     Stevens College, and learning the product line inside and out led to my favorite kind
     of problem: building the configuration and quoting tools the team now runs on, in

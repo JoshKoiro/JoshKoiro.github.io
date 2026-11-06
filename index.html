@@ -17,7 +17,9 @@ layout: default
 </section>
 
 {%- if profile.illustration and profile.illustration != "" %}
-<div class="illustration" role="img" aria-label="{{ profile.illustration_alt }}" style="--illustration: url('{{ profile.illustration | relative_url }}')"></div>
+{%- assign has_dark = false %}{% if profile.illustration_dark and profile.illustration_dark != "" %}{% assign has_dark = true %}{% endif %}
+<div class="illustration{% if has_dark %} has-dark{% endif %}" role="img" aria-label="{{ profile.illustration_alt }}"
+     style="--illustration: url('{{ profile.illustration | relative_url }}'){% if has_dark %}; --illustration-dark: url('{{ profile.illustration_dark | relative_url }}'){% endif %}"></div>
 {%- endif %}
 
 <section class="block{% unless profile.print_about %} no-print{% endunless %}" id="about">

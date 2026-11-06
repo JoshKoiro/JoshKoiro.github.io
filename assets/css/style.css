@@ -59,7 +59,10 @@
 
 /* ---------- Base ---------- */
 * { box-sizing: border-box; }
-html { background: var(--bg); -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+html { background: var(--bg); -webkit-text-size-adjust: 100%; }
+/* Nav links glide to their section. Lenis (assets/js/smooth-scroll.js) takes over when it
+   runs; this covers the rest, except for visitors who prefer reduced motion. */
+@media (prefers-reduced-motion: no-preference) { html:not(.lenis) { scroll-behavior: smooth; } }
 body {
   margin: 0;
   background: var(--bg);
@@ -164,6 +167,13 @@ a:hover { text-decoration-color: var(--accent); }
   background-color: var(--ink);
   -webkit-mask: var(--illustration) center / contain no-repeat;
   mask: var(--illustration) center / contain no-repeat;
+}
+/* Dark mode with its own banner (illustration_dark in profile.yml): shown as a normal
+   image in its own colours instead of the light drawing turned white. */
+[data-theme="dark"] .illustration.has-dark {
+  -webkit-mask: none;
+  mask: none;
+  background: var(--illustration-dark) center / contain no-repeat;
 }
 
 /* ---------- Sections: label column + content column ---------- */
@@ -303,6 +313,8 @@ a:hover { text-decoration-color: var(--accent); }
   .elsewhere a { grid-template-columns: 1fr auto; }
   /* On phones, crop the wide illustration to the figure at the desk */
   .illustration { aspect-ratio: 2 / 1; margin-top: 2.5rem; -webkit-mask-size: cover; mask-size: cover; -webkit-mask-position: 36% center; mask-position: 36% center; }
+  /* The figure sits further right in the dark drawing, so its phone crop is centred differently */
+  [data-theme="dark"] .illustration.has-dark { background-size: cover; background-position: 52% center; }
   .el-handle { display: none; }
 }
 
@@ -320,6 +332,70 @@ a:hover { text-decoration-color: var(--accent); }
 }
 .print-button:hover { background: var(--bg-deep); }
 .print-contact, .print-url { display: none; }
+
+/* ==================================================================
+   MOTION: subtle entrance animations (driven by assets/js/motion.js).
+   Everything here is scoped to html.motion, which is only set when the visitor
+   hasn't asked for reduced motion. Without it, nothing is hidden or animated.
+   ================================================================== */
+:root {
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);   /* gentle settle */
+  --ease-draw: cubic-bezier(0.65, 0, 0.35, 1);     /* rules and the illustration */
+  --reveal-distance: 14px;
+  --reveal-duration: 0.7s;
+}
+
+/* Items fade up into place */
+.motion .reveal {
+  opacity: 0;
+  transform: translateY(var(--reveal-distance));
+  transition:
+    opacity var(--reveal-duration) var(--ease-out) var(--reveal-delay, 0ms),
+    transform var(--reveal-duration) var(--ease-out) var(--reveal-delay, 0ms);
+}
+.motion .reveal.in { opacity: 1; transform: none; }
+
+/* Page load: the opening is animated in pure CSS, so it starts hidden from the very
+   first frame (no flash) and doesn't depend on the script. The role line and statement
+   rise into place, then the illustration is revealed left to right, as if being drawn. */
+@keyframes reveal-up   { from { opacity: 0; transform: translateY(var(--reveal-distance)); } to { opacity: 1; transform: none; } }
+@keyframes reveal-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes reveal-draw { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+.motion .intro .role      { animation: reveal-up var(--reveal-duration) var(--ease-out) both; }
+.motion .intro .statement { animation: reveal-up var(--reveal-duration) var(--ease-out) 120ms both; }
+.motion .illustration     { animation: reveal-draw 1.6s var(--ease-draw) 350ms both; }
+
+/* Section rules draw in from the left */
+.block { position: relative; }
+.motion .block { border-top-color: transparent; }
+.motion .block::before {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--rule-strong));
+  left: 0;
+  right: 0;
+  height: var(--rule-strong);
+  background: var(--ink);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.9s var(--ease-draw);
+}
+.motion .block.in::before { transform: scaleX(1); }
+
+/* Reduced motion (the visitor's system setting): fade in place, nothing slides or draws */
+.reduce-motion .reveal { transform: none; transition: opacity 0.5s ease var(--reveal-delay, 0ms); }
+.reduce-motion .intro .role,
+.reduce-motion .intro .statement { animation-name: reveal-fade; }
+.reduce-motion .illustration { animation: reveal-fade 0.8s ease 350ms both; }
+.reduce-motion .block { border-top-color: var(--ink); }
+.reduce-motion .block::before { display: none; }
+
+/* Never animate on paper */
+@media print {
+  .motion .reveal, .motion .intro .role, .motion .intro .statement, .motion .illustration { opacity: 1 !important; transform: none !important; clip-path: none !important; transition: none !important; animation: none !important; }
+  .motion .block { border-top-color: #000 !important; }
+  .motion .block::before { display: none !important; }
+}
 
 /* ==================================================================
    PRINTED RÉSUMÉ: what File > Print (or "Save as PDF") produces.

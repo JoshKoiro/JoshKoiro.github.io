@@ -6,7 +6,7 @@
  *   - a _data file can't be read (usually a YAML indentation or quoting mistake)
  *   - the name or opening statement is missing
  *   - a visible project or link has no URL to point at
- *   - the signature image is set but the file is missing
+ *   - the signature or an illustration image is set but the file is missing
  *   - a folder here would hide one of your project sites (e.g. a typewriters/ folder
  *     would replace joshkoiro.github.io/typewriters/)
  *
@@ -48,8 +48,10 @@ await load('skills');
 if (profile) {
   if (!profile.name) errors.push('profile.yml: name is empty');
   if (!profile.intro) errors.push('profile.yml: intro (the opening statement) is empty');
-  if (profile.signature && !(await exists(profile.signature.replace(/^\//, '')))) {
-    errors.push(`profile.yml: signature image not found at ${profile.signature}`);
+  for (const key of ['signature', 'illustration', 'illustration_dark']) {
+    if (profile[key] && !(await exists(profile[key].replace(/^\//, '')))) {
+      errors.push(`profile.yml: ${key} image not found at ${profile[key]}`);
+    }
   }
 }
 
