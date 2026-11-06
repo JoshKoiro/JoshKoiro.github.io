@@ -14,25 +14,39 @@ signature: "/assets/img/signature.png"
 illustration: "/assets/img/desk.webp"
 illustration_alt: "Illustration of a bearded developer at a desk with a typewriter, headphones and a monitor"
 
-# The big opening line. Keep it to one or two sentences.
-intro: >-
-  I quote and sell life-science equipment by day, and build software by night:
-  mostly tools that make complex products easier to configure, price and document.
+# The big opening line.
+#   - Wrap words in **double asterisks** to make them bold.
+#   - Leave a blank line to start a new line with some space above it.
+#   - Keep the "|-" after "intro:"; it tells YAML a block of text follows. Without it,
+#     a colon in the text (like "them**:") breaks the file.
+# ("sixty‑year‑old" uses non-breaking hyphens so it never splits across lines.)
+intro: |-
+  I'm **curious about almost everything**. I understand things by
+  **building them**: software, songs, essays and the occasional sixty‑year‑old typewriter.
+
+  Always with a cup of **coffee** close by...
 
 # The "About" section: one entry per paragraph.
 about:
   - >-
-    I work in estimating and sales at **Beta Star Life Science Equipment**, a division of
-    R-V Industries. Alongside quotes, proposals and sales support, I build some of the internal tools
-    the team runs on: product configurators, reporting, document generation and costing
-    analysis, in JavaScript, Excel VBA and SQL Server.
+    **Hi There!**
   - >-
-    I've been teaching myself JavaScript and Node.js for over a decade. At home I run a small
-    lab of Proxmox servers and Docker containers, and I spend the rest of my time on graphic
-    design, music production and writing.
+    I'm Josh, a mechanical designer turned estimator and digital handyman.
   - >-
-    Lately I've also been collecting and restoring manual typewriters, which turned into its
-    own [small website](https://joshkoiro.github.io/typewriters/).
+    By day I work in estimating and sales at **Beta Star Life Science Equipment**. I started
+    out in the engineering group as a mechanical designer after studying CAD at Thaddeus
+    Stevens College, and learning the product line inside and out led to my favorite kind
+    of problem: building the configuration and quoting tools the team now runs on, in
+    JavaScript, Excel VBA and SQL Server. My goal with any system is to automate it well
+    enough that I can move on to the next interesting thing.
+  - >-
+    Outside of work I'm a learning addict with too many tabs open. I write in-depth pieces
+    where faith, psychology and philosophy meet (an honest search for truth, wherever it
+    leads), I make music, and I keep a small home lab running. I also restore
+    [vintage typewriters](https://joshkoiro.github.io/typewriters/).
+  - >-
+    Mostly, though, I'm a husband and a dad, held together by love and a non-negotiable
+    amount of coffee.
   - >-
     Thanks for checking out my website. Feel free to reach out if you have any questions or just
     want to nerd out, over a shared interest!

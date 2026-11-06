@@ -13,7 +13,7 @@ layout: default
 
 <section class="intro">
   <p class="role">{{ profile.role }}</p>
-  <h1 class="statement">{{ profile.intro }}</h1>
+  <h1 class="statement">{{ profile.intro | markdownify | remove: "<p>" | replace: "</p>", '<span class="statement-break"></span>' | strip }}</h1>
 </section>
 
 {%- if profile.illustration and profile.illustration != "" %}
