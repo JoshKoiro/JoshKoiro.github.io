@@ -1,0 +1,12 @@
+# ------------------------------------------------------------------
+# SKILLS: groups of short items. Add, remove or rename groups freely.
+# ------------------------------------------------------------------
+
+- group: "Build with"
+  items: [JavaScript, Node.js, HTML & CSS, Excel VBA, SQL Server, Docker, Bash, Git]
+
+- group: "Design & media"
+  items: [Photoshop, Illustrator, SolidWorks, Typography, Music production, Live sound]
+
+- group: "Also"
+  items: [Technical writing, Prompt engineering, Proxmox home lab, Typewriter repair]

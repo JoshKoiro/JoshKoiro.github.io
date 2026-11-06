@@ -1,0 +1,37 @@
+# ------------------------------------------------------------------
+# EXPERIENCE & EDUCATION: newest first.
+#
+#   role:         job title or qualification
+#   org:          company or school (blank is fine)
+#   period:       e.g. "2019 – present" (blank is fine)
+#   description:  a sentence or two; Markdown allowed
+#
+# TODO: fill in the periods and the blank organizations. I didn't want to guess them.
+# ------------------------------------------------------------------
+
+- role: "Estimating & Sales"
+  org: "Beta Star Life Science Equipment · R-V Industries, Inc."
+  period: "2017 – present"
+  description: >-
+    Quotes, proposals and sales support for steam sterilizers. I design and maintain the
+    team's internal tools: product configurators, reporting, document generation and job-cost
+    analysis, and I train colleagues on our systems.
+
+- role: "Mechanical Engineering"
+  org: "Beta Star Life Science Equipment · R-V Industries, Inc."
+  period: "2014 – 2017"
+  description: >-
+    Joined a manufacturing company after graduating, producing models and drawings in
+    SolidWorks, then moved into estimating to work on process improvement.
+
+- role: "Associate Degree, Computer-Aided Drafting"
+  org: "Thaddeus Stevens College of Technology"
+  period: "2012 - 2014"
+  description: "A two-year program in computer-aided drafting."
+
+- role: "Freelance Web Design"
+  org: ""
+  period: "2010 – 2012"
+  description: >-
+    Between high school and college, learned the basics of web design and built sites for
+    small clients.

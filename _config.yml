@@ -1,0 +1,20 @@
+# ------------------------------------------------------------------
+# Site settings. The page CONTENT lives in _data/*.yml, not here.
+# ------------------------------------------------------------------
+title: "Josh Koiro"
+description: "Estimator and self-taught developer. Projects, experience and where to find me."
+url: "https://joshkoiro.github.io"
+baseurl: ""          # this is the main github.io site, so no sub-path
+
+markdown: kramdown
+
+# Files in the repo that aren't part of the published site
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - node_modules
+  - scripts
+  - vendor

@@ -1,0 +1,64 @@
+# ------------------------------------------------------------------
+# PROJECTS: shown in this order. Put the ones you're proudest of first.
+#
+#   name:         project name
+#   year:         when (a year, or a range like "2024–2026")
+#   description:  one or two sentences; Markdown allowed
+#   tags:         short labels, e.g. [JavaScript, Open source]
+#   links:        any number of { label, url }; the first link is where the name points
+#   show:         false hides it without deleting it
+# ------------------------------------------------------------------
+
+- name: "FormBrew"
+  year: "2026"
+  description: >-
+    An open-source, client-side form engine for building product configurators. Forms are
+    defined in JSON, with conditional logic, save/load, PDF export, dark mode and a plugin
+    system. It grew out of real quoting work.
+  tags: [JavaScript, Open source]
+  links:
+    - { label: "GitHub", url: "https://github.com/JoshKoiro/formbrew" }
+  show: true
+
+- name: "Typewriter Collection"
+  year: "2026"
+  description: >-
+    My collection of manual typewriters: photos, serials, typefaces and repair notes. A
+    static site with a photo pipeline, filters and sorting, and the backup of my collection data.
+  tags: [Jekyll, Node.js, Typewriters]
+  links:
+    - { label: "Website", url: "https://joshkoiro.github.io/typewriters/" }
+    - { label: "GitHub", url: "https://github.com/JoshKoiro/typewriters" }
+  show: true
+
+- name: "code-context-yeeter"
+  year: "2025"
+  description: >-
+    A small command-line tool that combines a codebase into a single file to hand to an LLM,
+    with ignore patterns, hidden-file handling and automatic binary-file skipping.
+  tags: [Node.js, CLI]
+  links:
+    - { label: "GitHub", url: "https://github.com/JoshKoiro/code-context-yeeter" }
+  show: true
+
+# Off until you decide: this site carries your full name, so linking the channel here
+# connects your last name to it. Set show: true and add the URL if that's fine with you.
+- name: "Typewriter hunting (YouTube)"
+  year: "2026"
+  description: >-
+    Thrift-store and typewriter-shop hunts, finds out in the wild, and the machines that come
+    home with me.
+  tags: [Video, Typewriters]
+  links:
+    - { label: "YouTube", url: "" }
+  show: false
+
+# Off until there's a public link to point at.
+- name: "Keebforge Build Planner"
+  year: ""
+  description: >-
+    A web configurator for planning custom mechanical keyboard builds.
+  tags: [JavaScript, Configurator]
+  links:
+    - { label: "Website", url: "" }
+  show: false

@@ -1,0 +1,52 @@
+# ------------------------------------------------------------------
+# WHO YOU ARE: the top of the page and the "About" section.
+# Text fields accept Markdown: **bold**, *italic*, [links](https://...)
+# ------------------------------------------------------------------
+
+name: "Josh Koiro"
+role: "Estimator & Digital Handyman"
+
+# Handwritten sign-off shown at the end of the About section. Remove the line to hide it.
+signature: "/assets/img/signature.png"
+
+# Desk illustration under the opening statement. It's used as a stencil filled with the
+# page's ink colour, so it turns white in dark mode. Remove the line to hide it.
+illustration: "/assets/img/desk.webp"
+illustration_alt: "Illustration of a bearded developer at a desk with a typewriter, headphones and a monitor"
+
+# The big opening line. Keep it to one or two sentences.
+intro: >-
+  I quote and sell life-science equipment by day, and build software by night:
+  mostly tools that make complex products easier to configure, price and document.
+
+# The "About" section: one entry per paragraph.
+about:
+  - >-
+    I work in estimating and sales at **Beta Star Life Science Equipment**, a division of
+    R-V Industries. Alongside quotes, proposals and sales support, I build some of the internal tools
+    the team runs on: product configurators, reporting, document generation and costing
+    analysis, in JavaScript, Excel VBA and SQL Server.
+  - >-
+    I've been teaching myself JavaScript and Node.js for over a decade. At home I run a small
+    lab of Proxmox servers and Docker containers, and I spend the rest of my time on graphic
+    design, music production and writing.
+  - >-
+    Lately I've also been collecting and restoring manual typewriters, which turned into its
+    own [small website](https://joshkoiro.github.io/typewriters/).
+  - >-
+    Thanks for checking out my website. Feel free to reach out if you have any questions or just
+    want to nerd out, over a shared interest!
+  - >-
+    --Josh
+
+# ------------------------------------------------------------------
+# PRINTED RÉSUMÉ (File > Print, or the "Print résumé" button in the header)
+# ------------------------------------------------------------------
+# Extra lines under your name on the printed version only, e.g. a city or email.
+# Careful: this file is public on GitHub even though the line only shows when printed.
+print_contact: []
+#  - "Lancaster County, PA"
+
+# The About section is skipped on the printed résumé (the opening statement serves as
+# the summary). Set this to true to include it.
+print_about: false

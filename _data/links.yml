@@ -1,0 +1,27 @@
+# ------------------------------------------------------------------
+# ELSEWHERE: the links in the header and the final section.
+#   label:   what it's called
+#   handle:  shown next to it (optional)
+#   url:     where it goes
+#   header:  true also shows it in the top-right of the page
+#   show:    false hides it
+# ------------------------------------------------------------------
+
+- label: "GitHub"
+  handle: "JoshKoiro"
+  url: "https://github.com/JoshKoiro"
+  header: true
+  show: true
+
+- label: "LinkedIn"
+  handle: "jkoiro"
+  url: "https://www.linkedin.com/in/jkoiro/"
+  header: true
+  show: true
+
+# The Creative Nerd Co., if you want it here:
+- label: "The Creative Nerd Co."
+  handle: "thecreativenerd.co"
+  url: "https://thecreativenerd.co"
+  header: false
+  show: false
