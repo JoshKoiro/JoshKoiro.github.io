@@ -36,6 +36,7 @@
   description: >-
     A small command-line tool that combines a codebase into a single file to hand to an LLM,
     with ignore patterns, hidden-file handling and automatic binary-file skipping.
+    Made with plenty of humor and memes!
   tags: [Node.js, CLI]
   links:
     - { label: "GitHub", url: "https://github.com/JoshKoiro/code-context-yeeter" }
