@@ -9,17 +9,6 @@
 #   show:         false hides it without deleting it
 # ------------------------------------------------------------------
 
-- name: "FormBrew"
-  year: "2026"
-  description: >-
-    An open-source, client-side form engine for building product configurators. Forms are
-    defined in JSON, with conditional logic, save/load, PDF export, dark mode and a plugin
-    system. It grew out of real quoting work.
-  tags: [JavaScript, Open source]
-  links:
-    - { label: "GitHub", url: "https://github.com/JoshKoiro/formbrew" }
-  show: true
-
 - name: "Typewriter Collection"
   year: "2026"
   description: >-
@@ -30,7 +19,17 @@
     - { label: "Website", url: "https://joshkoiro.github.io/typewriters/" }
     - { label: "GitHub", url: "https://github.com/JoshKoiro/typewriters" }
   show: true
-
+- name: "DocuBrew"
+  year: "2026"
+  description: >-
+    Markdown + reusable CSS styles → print-ready PDFs, with a live, paginated preview in your browser.
+    Write in Markdown (in any editor), style with layered CSS **Blends**, and see the printed pages update
+    every time you save. Export to PDF with page numbers, running headers and footers handled by standard
+    CSS Paged Media.
+  tags: [JavaScript, Open source]
+  links:
+    - { label: "GitHub", url: "https://github.com/JoshKoiro/docubrew" }
+  show: false
 - name: "code-context-yeeter"
   year: "2025"
   description: >-
@@ -39,7 +38,20 @@
     Made with plenty of humor and memes!
   tags: [Node.js, CLI]
   links:
-    - { label: "GitHub", url: "https://github.com/JoshKoiro/code-context-yeeter" }
+    - {
+        label: "GitHub",
+        url: "https://github.com/JoshKoiro/code-context-yeeter",
+      }
+  show: true
+- name: "FormBrew"
+  year: "2024"
+  description: >-
+    An open-source, client-side form engine for building product configurators. Forms are
+    defined in JSON, with conditional logic, save/load, PDF export, dark mode and a plugin
+    system. It grew out of real quoting work.
+  tags: [JavaScript, Open source]
+  links:
+    - { label: "GitHub", url: "https://github.com/JoshKoiro/formbrew" }
   show: true
 
 # Off until you decide: this site carries your full name, so linking the channel here

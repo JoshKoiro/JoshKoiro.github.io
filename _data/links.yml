@@ -18,6 +18,14 @@
   url: "https://www.linkedin.com/in/jkoiro/"
   header: true
   show: true
+- label: "Typewriter Collection"
+  url: "https://joshkoiro.github.io/typewriters/"
+  header: true
+  show: true
+- label: "Typewriter Database"
+  url: "https://typewriterdatabase.com/typewriters.php?hunter_search=8406"
+  header: false
+  show: true
 
 # The Creative Nerd Co., if you want it here:
 - label: "The Creative Nerd Co."

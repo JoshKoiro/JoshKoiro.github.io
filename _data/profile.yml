@@ -64,7 +64,6 @@ about:
 # Extra lines under your name on the printed version only, e.g. a city or email.
 # Careful: this file is public on GitHub even though the line only shows when printed.
 print_contact: []
-#  - "Lancaster County, PA"
 
 # The About section is skipped on the printed résumé (the opening statement serves as
 # the summary). Set this to true to include it.
